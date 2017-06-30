@@ -1,0 +1,19 @@
+Name: Richard Carragher
+Number: 12328901
+
+To deploy the web service and run a client run all commands from the src dir of the assignment submission. 
+
+Please note that port 9876 is needed for the process to run correctly
+
+For Depolyment
+
+../src> javac Server/*java
+../src> wsgen -cp . Server.PropertyListing
+../src> java Server/PropertyPublisher
+
+After this is done open another cmp
+
+../src> wsimport -p Client -keep http://localhost:9876/properties?wsdl -b asyncBinding.xml -s . 
+//last . is not a mistake.
+../src> javac Client/*.java
+../src> java Client/Client

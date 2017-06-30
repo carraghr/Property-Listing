@@ -1,0 +1,7 @@
+<jaxws:bindings
+wsdlLocation=
+"http://localhost:9876/properties?wsdl"
+xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+<jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+<jaxws:enableAsyncMapping>true</jaxws:enableAsyncMapping>
+</jaxws:bindings>
